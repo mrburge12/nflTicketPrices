@@ -32,7 +32,7 @@ for(i in 1:length(file.names)){
   #they are also going to be costly to clean up due to their nested nature.
   #this is something I can revisit later if necessary
   #We remove columns from eventData if they are listed in another dataframe
-  dropEventDataCols <- c("stats", "venue", "access_method", "taxonomies","performers", "links", "dq_bucket_counts")
+  dropEventDataCols <- c("stats", "venue", "access_method", "taxonomies","announcements", "performers", "links", "dq_bucket_counts")
   eventData<- eventData[ , !(names(eventData) %in% dropEventDataCols)]
   
   #fix timestamp variable
