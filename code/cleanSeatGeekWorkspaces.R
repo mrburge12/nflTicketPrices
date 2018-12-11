@@ -42,7 +42,7 @@ for(i in 1:length(file.names)){
   finalEventData<-as.data.frame(cbind(eventData, stats, access_method, venue, eventLocationLongLat, venueAccess_method))
   
   
-  outputFileName <- paste("C:/Users/mrbur/Desktop/nflTicketPrices/data/seatgeek/cleanData/sg_",timestamp,".csv",sep="") 
+  outputFileName <- paste("C:/Users/mrbur/Desktop/nflTicketPrices/data/seatgeek/cleanData/eventData/sg_",timestamp,".csv",sep="") 
   write_csv(finalEventData, path = outputFileName)
   
 }
