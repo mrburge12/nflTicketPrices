@@ -1,7 +1,12 @@
+library(jsonlite)
 setwd('C:/Users/mrbur/Desktop/nflTicketPrices/data/rawDataWorkspaces/seatgeek')
 path = 'C:/Users/mrbur/Desktop/nflTicketPrices/data/rawDataWorkspaces/seatgeek'
 out.file<-""
 file.names <- dir(path, pattern =".RData")
+
+
+#initialize data frame
+finalSGData<- list()
 
 #Loop through workspaces
 for(i in 1:length(file.names)){
@@ -38,13 +43,16 @@ for(i in 1:length(file.names)){
   #fix timestamp variable
   timestamp<-gsub(" ", "_", timestamp)
   timestamp<-gsub(":",".", timestamp)
-  #Combine dataframes to export
-  finalEventData<-as.data.frame(cbind(eventData, stats, access_method, venue, eventLocationLongLat, venueAccess_method))
   
+  #Combine dataframes to export
+  
+  finalEventData<-as.data.frame(cbind(timestamp, eventData, stats, access_method, venue, eventLocationLongLat, venueAccess_method))
+  #finalSGData[[i]] <- finalEventData #add to datalist for eventual merging
   
   outputFileName <- paste("C:/Users/mrbur/Desktop/nflTicketPrices/data/seatgeek/cleanData/eventData/sg_",timestamp,".csv",sep="") 
-  write_csv(finalEventData, path = outputFileName)
-  
+  write.csv(finalEventData, file = outputFileName)
+  pricesOutputFileName<- paste("C:/Users/mrbur/Desktop/nflTicketPrices/data/seatgeek/cleanData/priceData/sg_",timestamp,".json",sep="")
+  write_json(prices, path = pricesOutputFileName)
 }
 
 
