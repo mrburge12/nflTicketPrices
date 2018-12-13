@@ -39,5 +39,6 @@ duplicates drop
 
 order week_no pull_date team elo_rating
 gsort +week_no -elo_rating
+drop test
 save  "../data/538Data/cleanData/masterStandings.dta", replace
 export excel "../data/538Data/cleanData/masterStandings.xlsx", first(var) replace
