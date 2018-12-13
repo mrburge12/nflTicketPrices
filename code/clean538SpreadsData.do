@@ -6,20 +6,22 @@ clear
 cls
 br
 
+cd "C:\Users\g1mxb12\Desktop\nflTicketPrices\data\538Data\rawData\spreads"
+
 ********************************************************************************
 ** Import Data
 ********************************************************************************
 
-import excel "rawData/538_week14_2018-12-06.xlsx", sh("games") clear
-
+import excel "538_week15_2018-12-13.xlsx", sh("games") clear
 drop E
 
-********************************************************************************
-** Clean Data
-********************************************************************************
+*save "../../cleanData/masterSpreads.dta", replace
 
+**************
+** Clean Data
+**************
 *Mark the date the data was pulled. This will help to compare output over time
-g pull_date = "2018-12-06"
+g pull_date = "2018-12-13"
 
 *Clean up vars
 destring(C D), force replace
@@ -62,12 +64,16 @@ replace game_id = 1 if hometeam == "Y"
 replace game_id = game_id[_n-2]+1 if game_id[_n-2] ~= .
 replace game_id = game_id[_n+1] if game_id == .
 
-
+***************************
+** Order, append, and save
+***************************
 order pull_date game_id week_no game_date game_time team elo_point_spread win_prob hometeam
+append using "../../cleanData/masterSpreads.dta", force
+duplicates drop
+save "../../cleanData/masterSpreads.dta", replace
 
-*save "cleanData/spreads/spreads_win_prob.dta", replace
-*save "cleanData/spreads/master.dta"
+
+export excel "../../cleanData/masterSpreads.xlsx", first(var) replace
 
 
-append using "cleanData/spreads/master.dta", force
-save "cleanData/spreads/master.dta", replace
+
