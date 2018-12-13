@@ -11,9 +11,9 @@ br
 ** Import Data
 ********************************************************************************
 
-import excel "rawData/standings.xlsx", first sh("week14") clear
-g week_no = 14
-g pull_date = "2018-12-06"
+import excel "../data/538Data/rawData/standings/standings.xlsx", first sh("week15") clear
+g week_no = 15
+g pull_date = "2018-12-13"
 drop B win_division
 g record = ""
 replace record = substr(team, -4,4)
@@ -32,12 +32,12 @@ forvalues n = 0/9{
 replace team = subinstr(team, "`n'", "",.)
 }
 
-*save "cleanData/standingsMaster.dta", replace
+*save "../data/538Data/cleanData/masterStandings.dta"
 
-append using "cleanData/standingsMaster.dta", force
+append using  "../data/538Data/cleanData/masterStandings.dta", force
 duplicates drop
 
 order week_no pull_date team elo_rating
 gsort +week_no -elo_rating
-save "cleanData/standingsMaster.dta", replace
-export excel "cleanData/standings/standingsMaster.xlsx", first(var) replace
+save  "../data/538Data/cleanData/masterStandings.dta", replace
+export excel "../data/538Data/cleanData/masterStandings.xlsx", first(var) replace
