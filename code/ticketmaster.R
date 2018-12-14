@@ -1,16 +1,11 @@
 #install.packages(c("tidyverse", "stringr", "knitr", "curl", "jsonlite", "XML", "httr", "rvest", "ggmap"))
-library(tidyverse)
+
 library(stringr)
 library(knitr)
 library(curl)
 library(jsonlite)
-library(XML)
 library(httr)
 library(rvest)
-library(ggmap)
-library(dplyr)
-library(rlist)
-library(gsubfn)
 
 timestamp<-Sys.time()
 date<-Sys.Date()
@@ -153,5 +148,5 @@ for(i in 1:length(inventoryStatus)) {
 }
 
 
-save.image("C:/Users/mrbur/Desktop/nflTicketPrices/data/rawDataWorkspaces/ticketmaster/tm_2018-12-12.RData")
+save.image("C:/Users/g1mxb12/Desktop/nflTicketPrices/data/rawDataWorkspaces/ticketmaster/tm_2018-12-14.RData")
 
