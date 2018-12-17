@@ -79,4 +79,4 @@ for(i in 1:nrow(data)) {
 #}
 
 
-save.image("C:/Users/mrbur/Desktop/nflTicketPrices/data/rawDataWorkspaces/seatgeek/sg_2018-12-12.RData")
+save.image("C:/Users/mrbur/Desktop/nflTicketPrices/data/rawDataWorkspaces/seatgeek/sg_2018-12-17.RData")

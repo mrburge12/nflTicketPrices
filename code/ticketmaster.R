@@ -153,5 +153,5 @@ for(i in 1:length(inventoryStatus)) {
 }
 
 
-save.image("C:/Users/mrbur/Desktop/nflTicketPrices/data/rawDataWorkspaces/ticketmaster/tm_2018-12-12.RData")
+save.image("C:/Users/mrbur/Desktop/nflTicketPrices/data/rawDataWorkspaces/ticketmaster/tm_2018-12-17.RData")
 

@@ -1,7 +1,7 @@
 library(jsonlite)
 library(data.table)
-setwd('C:/Users/mrbur/Desktop/nflTicketPrices/data/rawDataWorkspaces/seatgeek')
-path = 'C:/Users/mrbur/Desktop/nflTicketPrices/data/rawDataWorkspaces/seatgeek'
+setwd('C:/Users/mrbur/Desktop/nflTicketPrices/data/rawDataWorkspaces/seatgeek/debugTest')
+path = 'C:/Users/mrbur/Desktop/nflTicketPrices/data/rawDataWorkspaces/seatgeek/debugTest'
 out.file<-""
 file.names <- dir(path, pattern =".RData")
 
@@ -19,20 +19,37 @@ for(i in 1:length(file.names)){
   
   #Pull out nested data frames
   dropStatsCols<- c("dq_bucket_counts")
+  
+  dupCols<- c("created_at", "employee_only", "id", "score", "url", "method", "popularity")
   stats<-eventData$stats[,!names(eventData$stats) %in% dropStatsCols]
+  for (col in dupCols) {
+    colnames(stats)[colnames(stats)== col] <- paste(col,"_stats", sep = "")
+    
+  }
   
   access_method<-eventData$access_method
+  for (col in dupCols) {
+    colnames(access_method)[colnames(access_method)== col] <- paste(col,"_accessMethod", sep = "")
+    
+  }
   
   #There's two nested data frames in the venue data frame, which is itself nested in eventData
   #These two data frames are separated from the rest of the venue data frame
   eventLocationLongLat<-eventData$venue$location
   venueAccess_method<-eventData$venue$access_method
-  
+  for (col in dupCols) {
+    colnames(venueAccess_method)[colnames(venueAccess_method)== col] <- paste(col,"_AccessMethod", sep = "")
+    
+  }
   #These two lines of code remove columns from a data frame by name
   #the purpose of un-nesting the data is to avoid duplication and to make
   #dat easier to export
   dropVenueDataCols<- c("location", "access_method", "links")
   venue<-eventData$venue[,!names(eventData$venue) %in% dropVenueDataCols]
+  for (col in dupCols) {
+    colnames(venue)[colnames(venue)== col] <- paste(col,"_venue", sep = "")
+    
+  }
   
   #At this point, we exclude taxonomies, performers, and links (they don't provide any necessary info for pricing)
   #they are also going to be costly to clean up due to their nested nature.
@@ -40,25 +57,21 @@ for(i in 1:length(file.names)){
   #We remove columns from eventData if they are listed in another dataframe
   dropEventDataCols <- c("stats", "venue", "access_method", "taxonomies","announcements", "performers", "links", "dq_bucket_counts")
   eventData<- eventData[ , !(names(eventData) %in% dropEventDataCols)]
-  
+
   #fix timestamp variable
   timestamp<-gsub(" ", "_", timestamp)
   timestamp<-gsub(":",".", timestamp)
   date<-substr(x = timestamp,1,10)
-  #Combine dataframes to export
   
+  #Combine dataframes to export
   finalEventData<-as.data.table(cbind(date,timestamp, eventData, stats, access_method, venue, eventLocationLongLat, venueAccess_method))
-  finalData<- rbind(finalEventData, finalData, fill = TRUE) 
-
-
-  pricesOutputFileName<- paste("C:/Users/mrbur/Desktop/nflTicketPrices/data/seatgeek/cleanData/priceData/sg_",timestamp,".json",sep="")
-  write_json(prices, path = pricesOutputFileName)
+  
+pricesOutputFileName<- paste("C:/Users/mrbur/Desktop/nflTicketPrices/data/seatgeek/cleanData/priceData/sg_",timestamp,".json",sep="")
+ write_json(prices, path = pricesOutputFileName)
 }
 
 
-
-
-outputFileName <- paste("C:/Users/mrbur/Desktop/nflTicketPrices/data/seatgeek/cleanData/eventData/finalData",".csv",sep="") 
-write.csv(finalData, file = outputFileName) 
+#outputFileName <- paste("C:/Users/mrbur/Desktop/nflTicketPrices/data/seatgeek/cleanData/eventData/finalDataWithTest",".csv",sep="") 
+#write.csv(finalData, file = outputFileName) 
   
 
