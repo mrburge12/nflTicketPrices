@@ -1,7 +1,9 @@
 library(jsonlite)
 library(data.table)
-setwd('C:/Users/mrbur/Desktop/nflTicketPrices/data/rawDataWorkspaces/seatgeek/debugTest')
-path = 'C:/Users/mrbur/Desktop/nflTicketPrices/data/rawDataWorkspaces/seatgeek/debugTest'
+library(dplyr)
+
+setwd('C:/Users/g1mxb12/Desktop/nflTicketPrices/data/rawDataWorkspaces/seatgeek/')
+path = 'C:/Users/g1mxb12/Desktop/nflTicketPrices/data/rawDataWorkspaces/seatgeek/'
 out.file<-""
 file.names <- dir(path, pattern =".RData")
 
@@ -66,12 +68,7 @@ for(i in 1:length(file.names)){
   #Combine dataframes to export
   finalEventData<-as.data.table(cbind(date,timestamp, eventData, stats, access_method, venue, eventLocationLongLat, venueAccess_method))
   
-pricesOutputFileName<- paste("C:/Users/mrbur/Desktop/nflTicketPrices/data/seatgeek/cleanData/priceData/sg_",timestamp,".json",sep="")
- write_json(prices, path = pricesOutputFileName)
+  outputFileName <- paste("C:/Users/g1mxb12/Desktop/nflTicketPrices/data/seatgeek/cleanData/eventData/individual/sg_", timestamp, ".csv",sep="") 
+  write.csv(finalEventData, file = outputFileName) 
 }
-
-
-#outputFileName <- paste("C:/Users/mrbur/Desktop/nflTicketPrices/data/seatgeek/cleanData/eventData/finalDataWithTest",".csv",sep="") 
-#write.csv(finalData, file = outputFileName) 
-  
 
