@@ -8,11 +8,13 @@ out.file<-""
 file.names <- dir(path, pattern =".RData")
 
 
-data<- load(file.names[1])
 
-for(i in length(prices)) {
-  if(length(prices[[i]]) == 1) {
-    rm(prices[[i]])
+for(i in 1:length(file.names)) {
+  finalPriceData<-data.frame()
+  load(file.names[i])
+  for(j in 1:length(prices)) {
+   priceData<-rbind(prices[[j]])
+  finalPriceData<-merge(priceData,finalPriceData)
   }
 }
 
