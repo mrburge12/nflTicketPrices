@@ -8,13 +8,15 @@ out.file<-""
 file.names <- dir(path, pattern =".RData")
 
 
+#finalPriceData<-data.table()
 
 for(i in 1:length(file.names)) {
-  finalPriceData<-data.frame()
   load(file.names[i])
   for(j in 1:length(prices)) {
-   priceData<-rbind(prices[[j]])
-  finalPriceData<-merge(priceData,finalPriceData)
+    if(length(prices[[j]]) > 5) {
+      test <- lapply(prices[[j]], data.table)
+    }
   }
+  test<- as.data.frame(test)
 }
 
