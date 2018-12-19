@@ -8,10 +8,6 @@ out.file<-""
 file.names <- dir(path, pattern =".RData")
 
 
-#initialize data tables
-finalData<- data.table()
-finalPriceData<-data.table()
-
 #Loop through workspaces
 for(i in 1:length(file.names)){
   data <- load(file.names[i])
@@ -69,6 +65,6 @@ for(i in 1:length(file.names)){
   finalEventData<-as.data.table(cbind(date,timestamp, eventData, stats, access_method, venue, eventLocationLongLat, venueAccess_method))
   
   outputFileName <- paste("C:/Users/g1mxb12/Desktop/nflTicketPrices/data/seatgeek/cleanData/eventData/individual/sg_", timestamp, ".csv",sep="") 
-  write.csv(finalEventData, file = outputFileName) 
+  #write.csv(finalEventData, file = outputFileName) 
 }
 
