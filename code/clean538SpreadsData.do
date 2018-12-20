@@ -12,7 +12,7 @@ cd "C:\Users\g1mxb12\Desktop\nflTicketPrices\data\538Data\rawData\spreads"
 ** Import Data
 ********************************************************************************
 
-import excel "538_week15_2018-12-13.xlsx", sh("games") clear
+import excel "538_week16_2018-12-20.xlsx", sh("games") clear
 drop E
 
 *save "../../cleanData/masterSpreads.dta", replace
@@ -21,7 +21,7 @@ drop E
 ** Clean Data
 **************
 *Mark the date the data was pulled. This will help to compare output over time
-g pull_date = "2018-12-13"
+g pull_date = "2018-12-20"
 
 *Clean up vars
 destring(C D), force replace
