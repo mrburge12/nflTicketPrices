@@ -80,5 +80,5 @@ for(i in 1:nrow(data)) {
 #}
 
 
-save.image("C:/Users/mrbur/Desktop/nflTicketPrices/data/rawDataWorkspaces/seatgeek/sg_2018-12-21.RData")
+save.image("C:/Users/mrbur/Desktop/nflTicketPrices/data/rawDataWorkspaces/seatgeek/sg_2018-12-22.RData")
 #install.packages(c("tidyverse", "stringr", "knitr", "curl", "jsonlite", "XML", "httr", "rvest", "ggmap"))
