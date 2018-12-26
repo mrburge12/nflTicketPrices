@@ -1,7 +1,7 @@
 
 #install.packages(c("tidyverse", "stringr", "knitr", "curl", "jsonlite", "XML", "httr", "rvest", "ggmap"))
 
-setwd('C:/Users/mrbur/Desktop/nflTicketPrices/code')
+setwd('C:/Users/g1mxb12/Desktop/nflTicketPrices/code')
 
 library(stringr)
 library(knitr)
@@ -80,5 +80,5 @@ for(i in 1:nrow(data)) {
 #}
 
 
-save.image("C:/Users/mrbur/Desktop/nflTicketPrices/data/rawDataWorkspaces/seatgeek/sg_2018-12-23.RData")
+save.image("C:/Users/g1mxb12/Desktop/nflTicketPrices/data/rawDataWorkspaces/seatgeek/sg_2018-12-26.RData")
 #install.packages(c("tidyverse", "stringr", "knitr", "curl", "jsonlite", "XML", "httr", "rvest", "ggmap"))
