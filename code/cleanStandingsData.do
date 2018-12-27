@@ -11,9 +11,9 @@ br
 ** Import Data
 ********************************************************************************
 
-import excel "../data/538Data/rawData/standings/standings.xlsx", first sh("week16") clear
-g week_no = 16
-g pull_date = "2018-12-20"
+import excel "../data/538Data/rawData/standings/standings.xlsx", first sh("week17") clear
+g week_no = 17
+g pull_date = "2018-12-27"
 drop B win_division
 g record = ""
 replace record = substr(team, -4,4)
@@ -39,5 +39,6 @@ duplicates drop
 
 order week_no pull_date team elo_rating
 gsort +week_no -elo_rating
+drop H
 save  "../data/538Data/cleanData/masterStandings.dta", replace
 export excel "../data/538Data/cleanData/masterStandings.xlsx", first(var) replace
