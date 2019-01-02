@@ -4,5 +4,8 @@ Seatgeek.R
 TicketMaster.R
 *Change output date
 
-cleanWorkspaces.R
-mergeEventData.R
+main.R 
+  Which calls:
+    cleanWorkspaces.R
+    mergeEventData.R
+    mergePriceData.R
