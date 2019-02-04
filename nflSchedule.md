@@ -178,129 +178,129 @@
 
 ## Week 11
 
--Green Bay Packers at Seattle Seahawks
--Dallas Cowboys at Atlanta Falcons
--Carolina Panthers at Detroit Lions
--Tennessee Titans at Indianapolis Colts
--Tampa Bay Buccanneers at New York Giants
--Houston Texans at Washington Redskins
--Pittsburgh Steelers at Jacksonville Jaguars
--Cincinnati Bengals at Baltimore Ravens
--Oakland Raiders at Arizona Cardinals
--Denver Broncos at Los Angeles Chargers
--Philadelphia Eagles at New Orleans Saints
--Minnesota Vikings at Chicago Bears
--Kansas City Chiefs at Los Angeles Rams
+- Green Bay Packers at Seattle Seahawks
+- Dallas Cowboys at Atlanta Falcons
+- Carolina Panthers at Detroit Lions
+- Tennessee Titans at Indianapolis Colts
+- Tampa Bay Buccanneers at New York Giants
+- Houston Texans at Washington Redskins
+- Pittsburgh Steelers at Jacksonville Jaguars
+- Cincinnati Bengals at Baltimore Ravens
+- Oakland Raiders at Arizona Cardinals
+- Denver Broncos at Los Angeles Chargers
+- Philadelphia Eagles at New Orleans Saints
+- Minnesota Vikings at Chicago Bears
+- Kansas City Chiefs at Los Angeles Rams
 
 ## Week 12
 
--Chicago Bears at Detroit Lions
--Washington Redskins at Dallas Cowboys
--Atlanta Falcons at New Orleans Saints
--Jacksonville Jaguars at Buffalo Bills
--Cleveland Browns at Cincinnati Bengals
--New England Patriots at New York Jets
--New York Giants at Philadelphia Eagles
--San Francisco 49ers at Tampa Bay Buccanneers
--Seattle Seahawks at Carolina Panthers
--Oakland Raiders at Baltimore Ravens
--Arizona Cardinals at Los Angeles Chargers
--Pittsburgh Steelers at Denver Broncos
--Miami Dolphins at Indianapolis Colts
--Green Bay Packers at Minnesota Vikings
--Tennessee Titans at Houston Texans
+- Chicago Bears at Detroit Lions
+- Washington Redskins at Dallas Cowboys
+- Atlanta Falcons at New Orleans Saints
+- Jacksonville Jaguars at Buffalo Bills
+- Cleveland Browns at Cincinnati Bengals
+- New England Patriots at New York Jets
+- New York Giants at Philadelphia Eagles
+- San Francisco 49ers at Tampa Bay Buccanneers
+- Seattle Seahawks at Carolina Panthers
+- Oakland Raiders at Baltimore Ravens
+- Arizona Cardinals at Los Angeles Chargers
+- Pittsburgh Steelers at Denver Broncos
+- Miami Dolphins at Indianapolis Colts
+- Green Bay Packers at Minnesota Vikings
+- Tennessee Titans at Houston Texans
 
 ## Week 13
 
--New Orleans Saints at Dallas Cowboys
--Baltimore Ravens at Atlanta Falcons
--Denver Broncos at Cincinnati Bengals
--Los Angeles Rams at Detroit Lions
--Arizona Cardinals at Green Bay Packers
--Buffalo Bills at Miami Dolphins
--Chicago Bears at New York Giants
--Carolina Panthers at Tampa Bay Buccanneers
--Indianapolis Colts at Jacksonville Jaguars
--Cleveland Browns at Houston Texans
--New York Jets at TennesseeTitans
--Kansas City Chiefs at Oakland Raiders
--Minnesota Vikings at New England Patriots
--San Francisco 49ers at Seattle Seahawks
--Los Angeles Chargers at Pittsburgh Steelers
--Washington Redskins at Philadelphia Eagles
+- New Orleans Saints at Dallas Cowboys
+- Baltimore Ravens at Atlanta Falcons
+- Denver Broncos at Cincinnati Bengals
+- Los Angeles Rams at Detroit Lions
+- Arizona Cardinals at Green Bay Packers
+- Buffalo Bills at Miami Dolphins
+- Chicago Bears at New York Giants
+- Carolina Panthers at Tampa Bay Buccanneers
+- Indianapolis Colts at Jacksonville Jaguars
+- Cleveland Browns at Houston Texans
+- New York Jets at TennesseeTitans
+- Kansas City Chiefs at Oakland Raiders
+- Minnesota Vikings at New England Patriots
+- San Francisco 49ers at Seattle Seahawks
+- Los Angeles Chargers at Pittsburgh Steelers
+- Washington Redskins at Philadelphia Eagles
 
 ## Week 14
 
--Jacksonville Jaguars at Tennessee Titans
--New York Jets at Buffalo Bills
--Carolina Panthers at Cleveland Browns
--Atlanta Falcons at Green Bay Packers
--Baltimore Ravens at Kansas City Chiefs
--New England Patriots at Miami Dolphins
--New Orleans Saints at Tampa Bay Buccanneers
--New York Giants at Washington Redskins
--Indianapolis Colts at Houston Texans
--Cincinnati Bengals at Los Angeles Chargers
--Denver Broncos at San Francisco 49ers
--Philadelphia Eagles at Dallas Cowboys
--Pittsburgh Steelers at Oakland Raiders
--Detroit Lions at Arizona Cardinals
--Los Angeles Rams at Chicago Bears
--Minnesota Vikings at Seattle Seahawks
+- Jacksonville Jaguars at Tennessee Titans
+- New York Jets at Buffalo Bills
+- Carolina Panthers at Cleveland Browns
+- Atlanta Falcons at Green Bay Packers
+- Baltimore Ravens at Kansas City Chiefs
+- New England Patriots at Miami Dolphins
+- New Orleans Saints at Tampa Bay Buccanneers
+- New York Giants at Washington Redskins
+- Indianapolis Colts at Houston Texans
+- Cincinnati Bengals at Los Angeles Chargers
+- Denver Broncos at San Francisco 49ers
+- Philadelphia Eagles at Dallas Cowboys
+- Pittsburgh Steelers at Oakland Raiders
+- Detroit Lions at Arizona Cardinals
+- Los Angeles Rams at Chicago Bears
+- Minnesota Vikings at Seattle Seahawks
 
 ## Week 15
 
--Los Angeles Chargers at Kansas City Chiefs
--Houston Texans at New York Jets
--Cleveland Browns at Denver Broncos
--Arizona Cardinals at Atlanta Falcons
--Detroit Lions at Buffalo Bills
--Green Bay Packers at Chicago Bears
--Oakland Raiders at Cincinnati Bengals
--Dallas Cowboys at Indianapolis Colts
--Miami Dolphins at Minnesota Vikings
--Tennessee Titans at New York Jets
--Washington Redskins at Jacksonville Jaguars
--Tampa Bay Buccanneers at Baltimore Ravens
--Seattle Seahawks at San Francisco 49ers
--New England Patriots at Pittsburgh Steelers
--Philadelphia Eagles at Los Angeles Rams
--New Orleans Saints at Carolina Panthers
+- Los Angeles Chargers at Kansas City Chiefs
+- Houston Texans at New York Jets
+- Cleveland Browns at Denver Broncos
+- Arizona Cardinals at Atlanta Falcons
+- Detroit Lions at Buffalo Bills
+- Green Bay Packers at Chicago Bears
+- Oakland Raiders at Cincinnati Bengals
+- Dallas Cowboys at Indianapolis Colts
+- Miami Dolphins at Minnesota Vikings
+- Tennessee Titans at New York Jets
+- Washington Redskins at Jacksonville Jaguars
+- Tampa Bay Buccanneers at Baltimore Ravens
+- Seattle Seahawks at San Francisco 49ers
+- New England Patriots at Pittsburgh Steelers
+- Philadelphia Eagles at Los Angeles Rams
+- New Orleans Saints at Carolina Panthers
 
 ## Week 16
 
--Washington Redskins at Tennessee Titans
--Baltimore Ravens at Los Angeles Chargers
--Cincinnati Bengals at Cleveland Browns
--Tampa Bay Buccanneers at Dallas Cowboys
--Minnesota Vikings at Detroit Lions
--New York Giants at Indianapolis Colts
--Jacksonville Jaguars at Miami Dolphins
--Buffalo Bills at New England Patriots
--Green Bay Packers at New York Jets
--Houston Texans at Philadelphia Eagles
--Atlanta Falcons at Carolina Panthers
--Los Angeles Rams at Arizona Cardinals
--Chicago Bears at San Francisco 49ers
--Pittsburgh Steelers at New Orleans Saints
--Kansas City Chiefs at Seattle Seahawks
--Denver Broncos at Oakland Raiders
+- Washington Redskins at Tennessee Titans
+- Baltimore Ravens at Los Angeles Chargers
+- Cincinnati Bengals at Cleveland Browns
+- Tampa Bay Buccanneers at Dallas Cowboys
+- Minnesota Vikings at Detroit Lions
+- New York Giants at Indianapolis Colts
+- Jacksonville Jaguars at Miami Dolphins
+- Buffalo Bills at New England Patriots
+- Green Bay Packers at New York Jets
+- Houston Texans at Philadelphia Eagles
+- Atlanta Falcons at Carolina Panthers
+- Los Angeles Rams at Arizona Cardinals
+- Chicago Bears at San Francisco 49ers
+- Pittsburgh Steelers at New Orleans Saints
+- Kansas City Chiefs at Seattle Seahawks
+- Denver Broncos at Oakland Raiders
 
 ## Week 17
 
--Miami Dolphins at Buffalo Bills
--Detroit Lions at Green Bay Packers
--New York Jets at New England Patriots
--Carolina Panthers at New Orleans Saints
--Dallas Cowboys at New York Giants
--Atlanta Falcons at Tampa Bay Buccanneers
--Jacksonville Jaguars at Houston Texans
--Los Angeles Chargers at Denver Broncos
--Oakland Raiders at Kansas City Chiefs
--San Francisco 49ers at Los Angeles Rams
--Chicago Bears at Minnesota Vikings
--Cincinnati Bengals at Pittsburgh Steelers
--Arizona Cardinals at Seattle Seahawks
--Philadelphia Eagles at Washington Redskins
--Cleveland Browns at Baltimore Ravens
--Indianapolis Colts at Tennessee Titans
+- Miami Dolphins at Buffalo Bills
+- Detroit Lions at Green Bay Packers
+- New York Jets at New England Patriots
+- Carolina Panthers at New Orleans Saints
+- Dallas Cowboys at New York Giants
+- Atlanta Falcons at Tampa Bay Buccanneers
+- Jacksonville Jaguars at Houston Texans
+- Los Angeles Chargers at Denver Broncos
+- Oakland Raiders at Kansas City Chiefs
+- San Francisco 49ers at Los Angeles Rams
+- Chicago Bears at Minnesota Vikings
+- Cincinnati Bengals at Pittsburgh Steelers
+- Arizona Cardinals at Seattle Seahawks
+- Philadelphia Eagles at Washington Redskins
+- Cleveland Browns at Baltimore Ravens
+- Indianapolis Colts at Tennessee Titans
