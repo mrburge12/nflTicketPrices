@@ -14,7 +14,7 @@
  - Takes in API key, Consumer Secret, keyword, segment ID, segment Name, genre ID,genre Name, subgenre ID, subgenre Name, type Name, subtype ID, subtype Name, and size
  - Searches for all game listings, checks ticket inventory status, uses resulting event IDs to pull pricing info
 
-3. `main.R` - `cleanWorkspaces.R`, `mergeEventData.R`,`mergePriceData.R`
+3. `main.R` - calls `cleanWorkspaces.R`, `mergeEventData.R`,`mergePriceData.R`
  - Takes seatgeek and ticketmaster workspaces and restructures into data frames
 
 
